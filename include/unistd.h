@@ -217,6 +217,8 @@
 
 	extern int shutdown(void);
 
+	extern int getprocess(void);
+
 	/*
 	 * Gets process information
 	 */
