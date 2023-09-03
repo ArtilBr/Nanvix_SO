@@ -153,6 +153,18 @@
 		/**@}*/
 
 		/**
+    	 * @name Buffer 
+    	 */
+		/**@{*/
+		struct process_buf{
+			pid_t pid;              /**< Process ID.              */
+			unsigned user_time;  /**< User CPU time.                           */
+    		unsigned kernel_time;  /**< Kernel CPU time.                         */
+			unsigned estado;  /**< Current state.                           */
+			int prioridade;    /**< Process priorities.                       */
+		}
+
+		/**
 		 * @name File system information
 		 */
 		/**@{*/

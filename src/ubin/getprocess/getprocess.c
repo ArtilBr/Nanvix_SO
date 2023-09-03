@@ -33,8 +33,24 @@ int main(int argc, char *const argv[])
 	((void)argc);
     ((void)argv);
 
-    printf("Hello World");
-    getprocess();
+    int pid_process;
+    struct process_buf *buf;
+    
+
+    for (int i = 1; i < argc; i++)
+    {
+        pid_process = atoi(argv[i]);
+    }
+    
+    if resultado = 0{
+    int result = getprocess(pid_process, &process_buf);
+    printf("ID PROCESS: %u\n")buf.pid;
+    printf("STATE PROCESS: %u\n")buf.state;
+    printf("PRIORITY PROCESS: %u\n")buf.priority;
+    printf("USER TIME: %u\n")buf.utime;
+    printf("KERNEL TIME: %u\n")buf.ktime;
+    }
+    else printf("Processo não encontrado\n");
 
 	return (EXIT_SUCCESS);
 }

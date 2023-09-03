@@ -268,7 +268,7 @@
 	/*
 	 * Get process
 	 */
-	EXTERN int sys_getprocess(void);
+	EXTERN int sys_getprocess(pid_t pid, struct process_buf *buf);
 
 #endif /* _ASM_FILE_ */
 

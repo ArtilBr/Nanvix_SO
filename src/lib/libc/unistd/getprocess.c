@@ -23,7 +23,7 @@
 /*
  * Get Process information. Buffer.
  */
-int getprocess()
+int getprocess(pid_t pid, struct process_buf *process_buf)
 {
 	int ret;
 
@@ -31,6 +31,10 @@ int getprocess()
 		"int $0x80"
 		: "=a" (ret)
 		: "0" (NR_getprocess),
+		"b"(pid),
+		"c"(process_buf),
+		
+
 	);
 
 	/* Error. */
